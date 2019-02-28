@@ -1,0 +1,559 @@
+@charset "UTF-8";
+/*Notify CSS developed by Graham O'Mahony*/
+/*Copyright 2019*/
+*
+{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Structure*/
+body
+{
+	color: #222;
+	background: #fff;
+}
+p, a, li, label, input, textarea, cite, th, td, caption, address, span
+{
+	font-family: 'Ubuntu', sans-serif;
+}
+p
+{
+	color: #545454;
+	font-size: 11pt;
+	line-height: 1.5;
+	margin: 12px 0;
+}
+h1, h2, h3, h4, h5, h6
+{
+	color: #222;
+	font-family: 'Ubuntu', sans-serif;
+}
+h1
+{
+	font-size: 22pt;
+	font-family: 'Pacifico', cursive;
+}
+h2
+{
+	font-size: 17pt;
+	margin: 22px 0;
+}
+strong
+{
+	color: #222;
+}
+a
+{
+	color: #444;
+	transition: all 0.2s linear; 
+}
+a:hover
+{
+	color: #222;
+}
+a.app-type:hover
+{
+	background: #2ecc71;
+}
+header, footer, section
+{
+	float: left;
+	width: 100%;
+	clear: both;
+}
+header
+{
+	color: #fff;
+	background: #2ecc71;
+	position: relative;
+	top: 0;
+	z-index: 1000;
+	min-height: 74px;
+	box-shadow: 1px 0 10px #2f2f2f;
+}
+header .subsection nav
+{
+	float: left;
+	width: 100%;
+}
+#mobilenav
+{
+	width: 80px;
+	padding: 18px;
+	float: right;
+	margin: 0 12px;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+#mobilenav:hover
+{
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 100%;
+}
+.bar1, .bar2, .bar3
+{
+	width: 40px;
+	height: 5px;
+	margin: 7px auto;
+	background: #fff;
+	transition: 0.3s;
+}
+.animate .bar1
+{
+	-webkit-transform: rotate(-45deg) translate(-8px, 7px);
+	transform: rotate(-45deg) translate(-8px, 7px);
+}
+.animate .bar2
+{
+	opacity: 0;
+}
+.animate .bar3
+{
+	-webkit-transform: rotate(45deg) translate(-9px, -9px);
+	transform: rotate(45deg) translate(-9px, -9px);
+}
+#hero
+{
+	min-height: 445px;
+	padding: 100px 0 0;
+	background: url("images/notify-hero.png") no-repeat scroll 100% 70% / 100% auto #2ecc71;
+}
+.subsection
+{
+	width: 1280px;
+	float: none;
+	background: transparent;
+}
+#home-heading
+{
+	color: #fff;
+	width: 310px;
+	margin: 20px 100px;
+}
+#home-heading h1
+{
+	color: #fff;
+	font-size: 35pt;
+	margin: 0 0 21px;
+}
+#home-heading p
+{
+	color: #fff;
+	font-size: 12pt;
+}
+span.dot
+{
+	color: #2ecc71;
+}
+.app-type
+{
+	width: 50px;
+	height: 50px;
+	margin: 0 12px 0 0;
+	border-radius: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	float: left;
+	text-align: center;
+}
+#base
+{
+	margin: 8px 0 40px;
+	display: inline-block;
+}
+.app-type.smlogo
+{
+	width: 35px;
+	height: 35px;
+}
+.app-type.smlogo img
+{
+	position: relative;
+	top: 4px;
+}
+
+.showcase h2
+{
+	font-size: 15pt;
+}
+#hero .col1
+{
+	padding: 70px 50px;
+}
+.col1
+{
+	width: 100%;
+}
+.col2
+{
+	width: 50%;
+	float: left;
+	padding: 50px 75px;
+}
+.col3
+{
+	width: 33.33%;
+	float: left;
+	background: inherit;
+}
+.featureicon
+{
+	width: 75px;
+	height: 75px;
+	background: #2ecc71;
+	border-radius: 100%;
+}
+.featureicon img
+{
+	position: relative;
+	top: 15px;
+}
+.showcase
+{
+	text-align: center;
+	padding: 38px 45px;
+}
+.promo
+{
+	background: #e3e3e3;
+}
+#video-preview
+{
+	width: auto;
+	float: right;
+}
+.vidplaceholder
+{
+	border-radius: 8px;
+}
+.feedback
+{
+	padding: 50px 0;
+}
+.featuredquote
+{
+	width: 55%;
+	margin: 0 auto;
+	text-align: center;
+}
+.quote
+{
+	font-style: italic;
+}
+input
+{
+	color: #888;
+	float: left;
+	font-size: 13pt;
+	text-transform: lowercase;
+	padding: 11.5px 12px;
+	border-radius: 8px 0 0 8px;
+	box-shadow: none;
+	outline: 0;
+	border: 1px solid #aaa;
+	border-right: none;
+}
+input:invalid
+{
+	border: 1px solid #d23131;
+	border-right: none;
+}
+input:focus
+{
+	border: 1px solid #444;
+	border-right: none;
+}
+input:valid
+{
+	border: 1px solid #2ecc71;
+	border-right: none;
+}
+button
+{
+	color: #fff;
+	float: left;
+	cursor: pointer;
+	border: none;
+	font-size: 13pt;
+	font-weight: bold;
+	display: inline-block;
+	padding: 12px 18px;
+	border-radius: 0 8px 8px 0;
+	background: #2ecc71;
+	transition: all 0.2s cubic-bezier(.61,.51,.68,.19);
+}
+button:hover
+{
+	background: #17ba5c;
+}
+.endnote
+{
+	text-align: center;
+}
+footer
+{
+	text-align: center;
+	padding: 45px; 0
+}
+footer a
+{
+	text-decoration: none;
+}
+.relatedlinks ul li
+{
+	display: inline-block;
+}
+.relatedlinks ul li a
+{
+	padding: 4px 8px;
+}
+ul#menu li
+{
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+	list-style: none;
+	display: none;
+}
+ul#menu.runin li
+{
+	width: 100%;
+	background: #444;
+	display: block;
+	position: relative;
+	-webkit-animation-name: run-in; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+	animation-name: run-in;
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes run-in{
+	0%{left: 0; top: -250px;}
+	100%{left: 0; top: 0;}
+}
+/*Standard syntax*/
+@keyframes run-in{
+	0%{left: 0; top: -250px;}
+	100%{left: 0; top: 0;}
+}
+ul#menu.runin li a
+{
+	color: #fff;
+	width: 100%;
+	padding: 18px 100px;
+	background: #111;
+	text-align: right;
+	display: inline-block;
+	text-decoration: none;
+}
+ul#menu.runin li a:hover
+{
+	background: #2ecc71;
+}
+#mask
+{
+	display: none;
+}
+#mask.modal
+{
+	display: block;
+	background: rgba(0, 0, 0, 0.7);
+}
+.modal
+{
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.slider
+{
+	max-width: 720px;
+	height: 50px;
+	margin: 30px auto 0;
+	position: relative;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+}
+.fader
+{
+	position: relative;
+	z-index: 1000;
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 1.0), transparent);
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 1.0), transparent);
+}
+.fader.rightside
+{
+	float: right;
+	background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 1.0), transparent);
+	background-image: linear-gradient(to left, rgba(255, 255, 255, 1.0), transparent);
+}
+.slider > .motion
+{
+	width: 968px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	transform: translate3d(0, 0, 0);
+}
+.slider .motion
+{
+	-webkit-animation: motionSlider 28s linear infinite;
+	animation: motionSlider 28s linear infinite;
+}
+@-webkit-keyframes motionSlider
+{
+	0%{transform: translateX(0%);}
+	100%{transform: translateX(-100%);}
+}
+@keyframes motionSlider
+{
+	0%{transform: translateX(0%);}
+	100%{transform: translateX(-100%);}
+}
+a.custfeedback
+{
+	position: relative;
+	z-index: 999;
+}
+span.overlay
+{
+	position: absolute;
+	top: -35px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	width: auto;
+	height: auto;
+	transition: .5s ease;
+	background: #2ecc71;
+}
+a.custfeedback:hover .overlay
+{
+	opacity: 0.5;
+}
+@media only screen and (min-width: 1201px)
+{
+}
+@media only screen and (max-width: 1200px)
+{
+#hero
+{
+	min-height: 350px;
+	padding-top: 45px;
+}
+.subsection
+{
+	width: 100%;
+}
+input
+{
+	width: 245px;
+}
+}
+@media only screen and (max-width: 989px)/*iPad*/
+{
+#hero
+{
+	min-height: auto;
+	padding: 21px 0 15px;
+	background: url("images/notify-hero.png") no-repeat scroll 50% 0% / 100% auto #2ecc71;
+}
+.subsection, .col2
+{
+	width: 100%;
+}
+.showcase
+{
+	padding: 30px 15px;
+}
+#video-preview img
+{
+	width: 100%;
+}
+.slider
+{
+	width: 100%;
+}
+}
+@media only screen and (max-width: 767px)/*iPhone*/
+{
+header
+{
+	min-height: 62px;
+}
+ul#menu.runin li a
+{
+	padding: 18px 30px;
+}
+#hero
+{
+	min-height: auto;
+	padding: 45px 0 15px;
+	background: url("images/notify-hero.png") no-repeat scroll 50% 0% / 200% auto #2ecc71;
+}
+#home-heading
+{
+	width: auto;
+	margin: 0;
+	margin: 0 25px 12px;
+}
+#home-heading p
+{
+	background: rgba(0, 0, 0, 0.7);
+	padding: 4px 6px;
+}
+.showcase
+{
+	padding: 12px 30px;
+}
+.subsection, .col2, .col3
+{
+	width: 100%;
+}
+.col2
+{
+	padding: 30px;
+}
+input
+{
+	width: 223px;
+}
+#video-preview img
+{
+	width: 100%;
+}
+.featuredquote, .endnote p
+{
+	width: 85%;
+	margin: 0 auto;
+}
+.relatedlinks ul li
+{
+	display: block;
+	text-align: left;
+	padding: 7px 0;
+}
+}
+@media only screen and (max-width: 361px)/*Galaxy (small)*/
+{
+#hero
+{
+	padding: 21px 0 15px;
+}
+input
+{
+	width: 210px;
+}
+}
